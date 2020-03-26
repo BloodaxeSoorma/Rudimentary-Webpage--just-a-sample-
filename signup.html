@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title></title>
+    <style>
+
+    body{
+        margin: 30px;
+        padding: 0;
+    }
+fieldset
+{
+    height: 300px;
+    width: 600px;
+}
+#rightsidebar
+{
+    float:right;
+    height:550px;
+    width:18%;
+    background-color:cyan;
+    margin-top:50px;
+}
+#maincontent
+{
+    background-color:#eeeded;
+    height: 1000px;
+    width: 100%;
+}
+#leftsidebar
+{
+    float:left;
+    height:1000px;
+    width:80%;
+    background-color:#eeeded;
+}
+
+#joinbutton
+{
+    height: 40px;
+    width: 100px;
+    color:black;
+    background-color: lightgreen;
+    border-radius:5px;
+}
+#rightsidebar h2
+{
+    color:#1b898d;
+    text-align:center;
+            font-style:italic;
+}
+#rightsidebar p
+{
+    letter-spacing:0px;
+    display:inline;
+    font-weight:bold;
+    text-align: center;
+    text-decoration:underline;
+    color: black;
+    padding-left: 20px;
+}
+#rightsidebar img
+{
+    padding-right: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="maincontent" >
+        <div id="leftsidebar">
+
+        <center>
+            <h1>Registrater</h>
+
+        <fieldset>
+            <legend>Put Your Details</legend>
+        <form name="registrater" method="post" action="submit.html" autocomplete>
+            <table align="center" width="400">
+                <tr><td><label for="fname">Name</label></td><td><input type="text" name="fname" id="fname" size="20" placeholder="First Name" autofocus required="required"></td></tr>
+                <tr><td>Email Id</td><td><input type="email" name="email" size"20"></td></tr>
+                <tr><td>Password</td><td><input type="password" name="password" size"20"></td></tr>
+                <tr><td>State</td>
+                    <td><select name="state" size="3" Multiple>
+                        <option value="0" selected>Select State</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="up">UP</option>
+                        <option value="mp">MP</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="haryana">Haryana</option>
+                    </selected>
+                </td></tr>
+                <tr><td><input type="submit" value="Register"></td><td><input type="reset" value="Clear"></td></tr>
+            </table>
+        </form>
+    </fieldset>
+
+</center>
+</div>
+<div id="rightsidebar">
+    <h2>Subscribe!</h2>
+
+<p><a href="rsspage.html" style="color:black;"><img src="rss.png" width="20px" height="20px">Subscribe via RSS</a></p><br>
+<p><a href="emailpage.html" style="color:black;"><img src="email.png" width="20px" height="20px">Get Email Updates</a></p><br>
+<p><a href="twitterpage.html" style="color:black;"><img src="twitter.png" width="20px" height="20px">Follows us on Twitter</a></p>
+
+    <h2>Popular Items</h2>
+    <p> Maecenas at malesuada arcu.</p>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <h2>Contributions</h2>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <p> Maecenas at malesuada arcu.</p><br>
+    <p> Maecenas at malesuada arcu.</p><br><br>
+<center>
+    <button id="joinbutton">JOIN</button>
+</center>
+</div>
+
+</div>
+</body>
+</html>
